@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#grupo{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
+    grid-gap:5px ;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "main main main main"
+        "aside aside aside aside"
+
+
+}
+
+nav{
+    background-color: brown;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.texts{
+    gap: 20px;
+
+}
+
+main{
+    background-color: green;
+    grid-area: main;
+}
+
+#imgC{
+    width: 100%;
+}
+
+aside{
+    background-color: palevioletred;
+    grid-area: aside;
+}
